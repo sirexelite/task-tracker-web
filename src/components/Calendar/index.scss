@@ -1,0 +1,27 @@
+.component-calendar {
+  &.animation-change {
+    & .component-calendar-cell {
+      pointer-events: none;
+      transition: none;
+
+      &.disabled {
+        opacity: 1;
+      }
+    }
+
+    & .component-calendar-days {
+      overflow-x: hidden;
+      overflow-y: clip;
+      max-height: calc(40px * 6 + (2px * 5));
+      grid-template-rows: repeat(13, 40px);
+    }
+
+    &.backward-direction {
+
+    }
+
+    &.foward-direction {
+
+    }
+  }
+}

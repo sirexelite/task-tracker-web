@@ -1,0 +1,18 @@
+.component-layout {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 320px 1fr;
+
+  background: var(--bg-secondary-body);
+
+  & .layout-content {
+    background: var(--bg-body);
+    border-radius: 16px;
+    margin: 8px;
+    padding: 32px;
+    display: flex;
+
+    box-shadow: 0 0 2px var(--stroke-opacity);
+  }
+}

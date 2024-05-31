@@ -1,0 +1,32 @@
+.component-calendar-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  & > span {
+    width: 100%;
+    font-size: 20px;
+    padding-left: 8px;
+  }
+  & .actions {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    & > button {
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        border-color: var(--stroke-opacity);
+      }
+    }
+  }
+}

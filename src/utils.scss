@@ -1,0 +1,29 @@
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    font-size: 12px;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    content: attr(data-tooltip);
+    left: 0;
+    top: calc(100% + 10px);
+    border-radius: 3px;
+    box-shadow: 0 0 5px 2px var(--stroke-opacity);
+    background-color: white;
+    z-index: 10;
+    padding: 4px;
+    width: fit-content;
+    transform: translate3D(0, -20px, 0);
+    transition: all 150ms cubic-bezier(.25, .8, .25, 1);
+  }
+
+  &:hover::after {
+    opacity: 1;
+    transform: translate3D(0, 0, 0);
+    transition-delay: 100ms;
+    transition-duration: 150ms;
+  }
+}

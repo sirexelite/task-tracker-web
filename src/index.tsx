@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './scheme.scss';
+import './utils.scss';
 import './index.scss';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Layout from "@components/Layout";
+import Calendar from "@components/Calendar";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Layout>
+      <Calendar/>
+    </Layout>
   </React.StrictMode>
 );
 

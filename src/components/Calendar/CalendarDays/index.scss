@@ -1,0 +1,7 @@
+.component-calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 40px);
+  grid-template-rows: repeat(6, 40px);
+  column-gap: 2px;
+  row-gap: 2px;
+}

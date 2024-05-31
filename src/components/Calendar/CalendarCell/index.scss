@@ -1,0 +1,27 @@
+.component-calendar-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--primary-text);
+  background: var(--bg-body);
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  transition: opacity 150ms ease-in-out;
+
+  &:hover {
+    border-color: var(--action);
+  }
+
+  &.selected {
+    border-color: var(--action);
+  }
+  &.today {
+    background: var(--action);
+    color: var(--primary-text);
+  }
+  &.disabled {
+    opacity: 0.3;
+  }
+}
